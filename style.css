@@ -194,7 +194,7 @@ flex-direction: column;
     width: 60px;
     height: 34px;
     margin-left: 20px;
-    margin-bottom: 19px;
+    margin-bottom: 16px;
 }
 .slider{
     display: flex;
@@ -213,4 +213,31 @@ h3 {
     font-size: 16px;
     color: white;
     bottom: 100px;
+}
+.patrat {
+    margin-top: 5px;
+    margin-left: 3px;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+}
+.group__all{
+    margin-top: 20px ;
+    min-width: 150px;
+    width: 100%;
+    background-color: #fff;
+}
+.group{
+   
+    
+    box-sizing: border-box;
+    margin: 0;
+    border-radius: 0;
+    font: inherit;
+    overflow: visible;
+    
+    width: 100%;
+    border: none;
+    color: #666;
+
 }
