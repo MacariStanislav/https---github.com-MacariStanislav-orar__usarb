@@ -1,69 +1,96 @@
-reset css 
+reset css
+
 /* Reset and base styles  */
 * {
-	padding: 0px;
-	margin: 0px;
-	border: none;
+    padding: 0px;
+    margin: 0px;
+    border: none;
 }
 
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* Links */
 
-a, a:link, a:visited  {
+a,
+a:link,
+a:visited {
     text-decoration: none;
 }
 
-a:hover  {
+a:hover {
     text-decoration: none;
 }
 
 /* Common */
 
-aside, nav, footer, header, section, main {
-	display: block;
+aside,
+nav,
+footer,
+header,
+section,
+main {
+    display: block;
+
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     font-size: inherit;
-	font-weight: inherit;
+    font-weight: inherit;
 }
 
-ul, ul li {
-	list-style: none;
+h2 {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+ul,
+ul li {
+    list-style: none;
 }
 
 img {
-	vertical-align: top;
+    vertical-align: top;
 }
 
-img, svg {
-	max-width: 100%;
-	height: auto;
+img,
+svg {
+    max-width: 100%;
+    height: auto;
 }
 
 address {
-  font-style: normal;
+    font-style: normal;
 }
 
 /* Form */
 
-input, textarea, button, select {
-	font-family: inherit;
+input,
+textarea,
+button,
+select {
+    font-family: inherit;
     font-size: inherit;
     color: inherit;
     background-color: transparent;
 }
 
 input::-ms-clear {
-	display: none;
+    display: none;
 }
 
-button, input[type="submit"] {
+button,
+input[type="submit"] {
     display: inline-block;
     box-shadow: none;
     background-color: transparent;
@@ -71,40 +98,44 @@ button, input[type="submit"] {
     cursor: pointer;
 }
 
-input:focus, input:active,
-button:focus, button:active {
+input:focus,
+input:active,
+button:focus,
+button:active {
     outline: none;
 }
 
 button::-moz-focus-inner {
-	padding: 0;
-	border: 0;
+    padding: 0;
+    border: 0;
 }
 
 label {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 legend {
-	display: block;
+    display: block;
 }
 
 
-html{
-    background-image: url('image/new_background_1 (2).png') ;  
+html {
+    background-image: url('image/new_background_1 (2).png');
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Times New Roman', Times, serif;
-    min-height: 100vh; 
-   
-    
+
+
+
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
-    display: inline-block;
+
 }
-main{
+
+main {
     display: flex;
     margin-top: 20px;
 
@@ -112,12 +143,13 @@ main{
 
 
 .left__block {
-   
+
     margin-left: 180px;
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
-.first__block{
+
+.first__block {
 
     font-family: sans-serif;
     font-size: 20px;
@@ -131,17 +163,19 @@ flex-direction: column;
 }
 
 .left__block h4 {
- margin: 0;
- padding: 0;
- font-weight: 900;
- text-align: center;
- font-size: 1.25rem;
- line-height: 1.4;
- 
+    margin: 0;
+    padding: 0;
+    font-weight: 900;
+    text-align: center;
+
+    line-height: 1.4;
+
 }
+
 .butoane {
     margin-top: 20px;
 }
+
 .butoane1 {
     border: none;
     font: inherit;
@@ -150,18 +184,25 @@ flex-direction: column;
     display: inline-block;
     box-sizing: border-box;
     padding: 0 30px;
-    font-size: .875rem;
+
     line-height: 38px;
     text-align: center;
     text-decoration: none;
-    background-color:green;
-   color: rgb(255, 255, 255);
+    background-color: #3d8d62;
+    color: rgb(255, 255, 255);
 
 }
-.butoane1:hover{
+
+.butoane1:hover {
     background-color: white;
     color: #000000;
 }
+
+.butoane1:focus {
+    background-color: white;
+    color: #000000;
+}
+
 .butoane2 {
     border: none;
     font: inherit;
@@ -174,14 +215,21 @@ flex-direction: column;
     line-height: 38px;
     text-align: center;
     text-decoration: none;
-    background-color: green;
-   color: white;
-   margin-left:60px ;
+    background-color: #3d8d62;
+    color: white;
+    margin-left: 60px;
 }
-.butoane2:hover{
+
+.butoane2:hover {
     background-color: white;
     color: #000000;
 }
+
+.butoane2:focus {
+    background-color: white;
+    color: #000000;
+}
+
 .butoane3 {
     border: none;
     font: inherit;
@@ -194,20 +242,27 @@ flex-direction: column;
     line-height: 38px;
     text-align: center;
     text-decoration: none;
-    background-color: green;
+    background-color: #3d8d62;
     color: white;
     margin-left: 80px;
-    
+
 }
-.butoane3:hover{
+
+.butoane3:hover {
     background-color: white;
     color: #000000;
 }
-.filter{
+
+.butoane3:focus {
+    background-color: white;
+    color: #000000;
+}
+
+.filter {
     display: flex;
-    align-items: end;
     margin-top: 20px;
 }
+
 .switch {
     position: relative;
     width: 60px;
@@ -215,7 +270,8 @@ flex-direction: column;
     margin-left: 20px;
     margin-bottom: 16px;
 }
-.slider{
+
+.slider {
     display: flex;
     position: absolute;
     cursor: pointer;
@@ -225,14 +281,9 @@ flex-direction: column;
     bottom: 0;
     background-color: #ccc;
     transition: .4s;
-   
+
 }
-h3 {
-       font-family: 'Times New Roman';
-    font-size: 16px;
-    color: white;
-    bottom: 100px;
-}
+
 .patrat {
     margin-top: 5px;
     margin-left: 3px;
@@ -240,48 +291,61 @@ h3 {
     height: 25px;
     background-color: white;
 }
-.group{
+
+h3 {
+    font-family: 'Times New Roman';
+    font-size: 16px;
+    color: white;
+    bottom: 100px;
+}
+
+.group {
     position: relative;
     background: white;
     display: flex;
-  
+
     position: relative;
     background: white;
 }
-.group__zone{ border: none;
+
+.group__zone {
+    border: none;
     height: 40px;
     width: 100%;
     padding-right: 30px;
 
 }
+
 .group div:first-child {
     height: 40px;
     width: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    
+
+
 }
 
 
-.button__group{
+.button__group {
     background: white;
     height: 100px;
     padding: 0;
     width: 100%;
-    list-style: none;
+    
     overflow-y: scroll;
-    scrollbar-width: 110px;
+    
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: flex-start;
+    
+  
 }
+
 .button__group button {
     width: 100%;
     border: none;
 }
+
 .button__group li {
     border-bottom: 1px solid #ccc;
     color: #666;
@@ -291,26 +355,30 @@ h3 {
     text-align: start;
     width: 100%;
 }
-.button__group button:hover > li {
+
+.button__group button:hover>li {
     background: #fff7c0;
     color: #25975A;
 }
-.button__group button:focus > li {
+
+.button__group button:focus>li {
     border-bottom: none;
-   
+
     font-size: 16px;
-  
+
     font-family: 'Times New Roman', Times, serif;
     padding: 5px 10px 5px 15px;
     color: white;
     background: #25975A;
 }
+
 #nedelea__select {
     border: none;
     height: 40px;
     width: 100%;
     margin-top: 20px;
 }
+
 #nedelea__select,
 #day__select {
     font-family: 'Times New Roman';
@@ -330,7 +398,7 @@ h3 {
 
 .schedule-grid {
     display: grid;
-    grid-template-columns: 120px repeat(7, 50px); 
+    grid-template-columns: 120px repeat(7, 50px);
     grid-template-rows: auto repeat(7, 20px);
     gap: 1px;
     box-shadow: 10px -10px 10px rgba(0, 0, 0, 0.8);
@@ -338,25 +406,18 @@ h3 {
     color: white;
 }
 
-/* Заголовки */
+
 .header {
     background-color: #25975A;
     color: white;
     text-align: center;
     font-weight: bold;
     border: 1px solid white;
-    padding: 5px 10px;  
+    padding: 5px 10px;
 }
 
 
-.schedule-grid .row:first-child {
-    background-color: #25975A;
-    color: white;
-    text-align: left; 
-    padding-left: 10px;
-    font-weight: bold;
-    height: 20px;  
-}
+
 
 
 .row {
@@ -364,8 +425,8 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5px;  
-    border: 1px solid rgb(255, 255, 255); 
+    padding: 5px;
+    border: 1px solid rgb(255, 255, 255);
     height: 20px;
     color: white;
 }
@@ -379,7 +440,7 @@ h3 {
     color: #000000;
 }
 
-.schedule-grid .row:hover > .header {
+.schedule-grid .row:hover>.header {
     background: lightgoldenrodyellow;
     color: black;
     border: 1px solid white;
@@ -388,21 +449,27 @@ h3 {
 
 
 .green {
-background: #25975A;
+    background: #25975A;
+    
 }
+
 .black {
     background: #000000;
 
 }
+
 .caf {
     background: #453b27;
 }
+
 .yellow {
     background: #dcf500;
 }
+
 .orange {
     background: #ff6600;
 }
+
 .blue {
     background: royalblue;
 }
@@ -425,15 +492,21 @@ background: #25975A;
     text-align: center;
     vertical-align: middle;
 }
- .div__not {
-   background: white;
+
+.div__not {
+    background: white;
     border: 1px solid rgb(255, 255, 255);
- }
- h5 {
+}
+.div__not:hover{
+    background: rgb(244, 69, 69);
+}
+
+h5 {
     font-size: 13px;
     color: white;
     margin: 0 0 20px 10px;
 }
+
 .instructions {
     margin-top: 20px;
     width: 450px;
@@ -441,9 +514,10 @@ background: #25975A;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .buttons {
     height: 20px;
-    
+
 }
 
 .buttons a {
@@ -460,9 +534,11 @@ background: #25975A;
 .buttons a:first-child {
     background: #3d8d62;
 }
+
 .buttons a:nth-child(2) {
     background: #d85f75;
 }
+
 .buttons a:last-child {
     background: rgb(111, 43, 89);
 }
@@ -474,6 +550,7 @@ background: #25975A;
 .buttons svg {
     position: absolute;
 }
+
 .info__last {
     margin-top: 20px;
     align-content: center;
@@ -482,4 +559,77 @@ background: #25975A;
     font-size: 16px;
     padding: 15px 30px 15px 15px;
     width: 100%;
+}
+
+#logo {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+#logo img {
+    height: 100%;
+}
+
+.right {
+    margin-left: 40px;
+}
+
+.schedule-container {
+    display: grid;
+    grid-template-columns: 140px 565px;
+    grid-template-rows: repeat(7, auto);
+
+    box-shadow: 10px -10px 10px rgba(0, 0, 0, 0.8);
+}
+
+.time-slot {
+    background: #25975A;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80px;
+    border: 1px solid white;
+}
+
+
+.class-details {
+    background: white;
+    padding: 10px;
+    color: #666;
+    border: 1px solid rgb(165, 165, 165);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80px;
+}
+
+
+
+
+.schedule-container .time-slot:hover,
+.class-details:hover {
+    background-color: lightgoldenrodyellow;
+    color: black;
+}
+
+
+.schedule-container .time-slot div,
+.schedule-container .class-details div {
+    font-size: 15px;
+    margin: 1.5px 0;
+}
+
+
+
+
+.schedule-container div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
