@@ -154,9 +154,13 @@ flex-direction: column;
     line-height: 38px;
     text-align: center;
     text-decoration: none;
-    background-color: white;
-   color: black;
+    background-color:green;
+   color: rgb(255, 255, 255);
 
+}
+.butoane1:hover{
+    background-color: white;
+    color: #000000;
 }
 .butoane2 {
     border: none;
@@ -165,7 +169,7 @@ flex-direction: column;
     border-radius: 0;
     display: inline-block;
     box-sizing: border-box;
-    padding: 0 30px;
+    padding: 0 40px;
     font-size: .875rem;
     line-height: 38px;
     text-align: center;
@@ -174,6 +178,10 @@ flex-direction: column;
    color: white;
    margin-left:60px ;
 }
+.butoane2:hover{
+    background-color: white;
+    color: #000000;
+}
 .butoane3 {
     border: none;
     font: inherit;
@@ -181,15 +189,19 @@ flex-direction: column;
     border-radius: 0;
     display: inline-block;
     box-sizing: border-box;
-    padding: 0 30px;
+    padding: 0 40px;
     font-size: .875rem;
     line-height: 38px;
     text-align: center;
     text-decoration: none;
     background-color: green;
     color: white;
-    margin-left: 40px;
+    margin-left: 80px;
     
+}
+.butoane3:hover{
+    background-color: white;
+    color: #000000;
 }
 .filter{
     display: flex;
@@ -417,3 +429,57 @@ background: #25975A;
    background: white;
     border: 1px solid rgb(255, 255, 255);
  }
+ h5 {
+    font-size: 13px;
+    color: white;
+    margin: 0 0 20px 10px;
+}
+.instructions {
+    margin-top: 20px;
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.buttons {
+    height: 20px;
+    
+}
+
+.buttons a {
+    color: white;
+    font-size: 14px;
+    font-family: 'Times New Roman';
+    text-decoration: none;
+    border-radius: 3px;
+    background: black;
+    padding: 5px 25px 5px 10px;
+    border: 1px solid white;
+}
+
+.buttons a:first-child {
+    background: #3d8d62;
+}
+.buttons a:nth-child(2) {
+    background: #d85f75;
+}
+.buttons a:last-child {
+    background: rgb(111, 43, 89);
+}
+
+.buttons a:not(:first-child) {
+    margin-left: 10px;
+}
+
+.buttons svg {
+    position: absolute;
+}
+.info__last {
+    margin-top: 20px;
+    align-content: center;
+    background: #edfbf6;
+    color: #32d296;
+    font-size: 16px;
+    padding: 15px 30px 15px 15px;
+    width: 100%;
+}
