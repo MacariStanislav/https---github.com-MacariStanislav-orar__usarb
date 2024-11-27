@@ -99,8 +99,14 @@ html{
    
     
 }
+body{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
 main{
     display: flex;
+    margin-top: 20px;
 
 }
 
@@ -221,23 +227,90 @@ h3 {
     height: 25px;
     background-color: white;
 }
-.group__all{
-    margin-top: 20px ;
-    min-width: 150px;
-    width: 100%;
-    background-color: #fff;
-}
 .group{
-   
+    position: relative;
+    background: white;
+    display: flex;
+  
+    position: relative;
+    background: white;
+}
+.group__zone{ border: none;
+    height: 40px;
+    width: 100%;
+    padding-right: 30px;
+
+}
+.group div:first-child {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
-    box-sizing: border-box;
-    margin: 0;
-    border-radius: 0;
-    font: inherit;
-    overflow: visible;
     
+}
+
+
+.button__group{
+    background: white;
+    height: 100px;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    overflow-y: scroll;
+    scrollbar-width: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+}
+.button__group button {
     width: 100%;
     border: none;
+}
+.button__group li {
+    border-bottom: 1px solid #ccc;
     color: #666;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px 10px 5px 15px;
+    text-align: start;
+    width: 100%;
+}
+.button__group button:hover > li {
+    background: #fff7c0;
+    color: #25975A;
+}
+.button__group button:focus > li {
+    border-bottom: none;
+   
+    font-size: 16px;
+  
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px 10px 5px 15px;
+    color: white;
+    background: #25975A;
+}
+#nedelea__select {
+    border: none;
+    height: 40px;
+    width: 100%;
+    margin-top: 20px;
+}
+#nedelea__select,
+#day__select {
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    color: #000000;
+    border: none;
+    background: white;
+    height: 40px;
+    width: 100%;
+    padding: 5px;
+}
 
+#day__select option {
+    font-family: 'Times New Roman';
+    font-size: 20px;
 }
