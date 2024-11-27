@@ -110,6 +110,7 @@ main{
 
 }
 
+
 .left__block {
    
     margin-left: 180px;
@@ -314,3 +315,105 @@ h3 {
     font-family: 'Times New Roman';
     font-size: 20px;
 }
+
+.schedule-grid {
+    display: grid;
+    grid-template-columns: 120px repeat(7, 50px); 
+    grid-template-rows: auto repeat(7, 20px);
+    gap: 1px;
+    box-shadow: 10px -10px 10px rgba(0, 0, 0, 0.8);
+    margin-top: 30px;
+    color: white;
+}
+
+/* Заголовки */
+.header {
+    background-color: #25975A;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid white;
+    padding: 5px 10px;  
+}
+
+
+.schedule-grid .row:first-child {
+    background-color: #25975A;
+    color: white;
+    text-align: left; 
+    padding-left: 10px;
+    font-weight: bold;
+    height: 20px;  
+}
+
+
+.row {
+    background-color: #25975A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;  
+    border: 1px solid rgb(255, 255, 255); 
+    height: 20px;
+    color: white;
+}
+
+
+
+
+.row:hover {
+    background-color: lightgoldenrodyellow;
+    border-color: white;
+    color: #000000;
+}
+
+.schedule-grid .row:hover > .header {
+    background: lightgoldenrodyellow;
+    color: black;
+    border: 1px solid white;
+}
+
+
+
+.green {
+background: #25975A;
+}
+.black {
+    background: #000000;
+
+}
+.caf {
+    background: #453b27;
+}
+.yellow {
+    background: #dcf500;
+}
+.orange {
+    background: #ff6600;
+}
+.blue {
+    background: royalblue;
+}
+
+.gray {
+    background: rgb(180, 180, 180);
+}
+
+.pink {
+    background: pink;
+}
+
+
+.schedule-grid .row:first-child:hover {
+    background-color: lightgoldenrodyellow;
+}
+
+
+.schedule-grid div {
+    text-align: center;
+    vertical-align: middle;
+}
+ .div__not {
+   background: white;
+    border: 1px solid rgb(255, 255, 255);
+ }
