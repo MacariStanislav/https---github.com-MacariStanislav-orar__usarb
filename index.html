@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,292 +8,326 @@
     <title>Orarul USARB</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <main>
-     
+
         <div class="left__block">
             <div class="first__block">
-         <h4>Orarul Cursului</h4>
-        </div>
-      <div class="butoane">
-        <button class="butoane1">Grupe</button>
-        <button class="butoane2">Profesori</button>
-        <button class="butoane3">Aule</button>
-      </div>
-      
-      <div class="filter">
-        <h3>Regim pentru student</h3>
-        <label class="switch">
-         
-            <span class="slider"><div class="patrat"></div></span>
-        </div>
-        </label>
-        <div class="group">
-            <div><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="search-icon"><circle fill="none" stroke="#000" stroke-width="1.1" cx="9" cy="9" r="7"></circle><path fill="none" stroke="#000" stroke-width="1.1" d="M14,14 L18,18 L14,14 Z"></path></svg></div>
-            <input type="search" autocapitalize="off" class="group__zone">
-            
-        </div>
-        
-        <ul class="button__group">
-            <button>
-                <li>IT01Z</li>
-            </button><button>
-                <li>IT02Z</li>
-            </button><button>
-                <li>IT03Z</li>
-            </button><button>
-                <li>IT04Z</li>
-            </button><button>
-                <li>IT05Z</li>
-            </button><button>
-                <li>IT06Z</li>
-            </button><button>
-                <li>IT07Z</li>
-            </button><button>
-                <li>IT08Z</li>
-            </button><button>
-                <li>IT09Z</li>
-            </button><button>
-                <li>IT10Z</li>
-            </button><button>
-                <li>IT11Z</li>
-            </button><button>
-                <li>IT12Z</li>
-            </button><button>
-                <li>IT13Z</li>
-            </button><button>
-                <li>IT14Z</li>
-            </button><button>
-                <li>IT15Z</li>
-            </button><button>
-                <li>IT16Z</li>
-            </button><button>
-                <li>IT17Z</li>
-            </button><button>
-                <li>IT18Z</li>
-            </button><button>
-                <li>IT19Z</li>
-            </button><button>
-                <li>IT20Z</li>
-            </button><button>
-                <li>IT21Z</li>
-            </button><button>
-                <li>IT22Z</li>
-            </button><button>
-                <li>IT23Z</li>
-            </button><button>
-                <li>IT24Z</li>
-            </button><button>
-                <li>IT25Z</li>
-            </button>
-        </ul>
-        <select name="" id="day__select">
-            <option value="">Ziua</option>
-            <option value="">Luni</option>
-            <option value="">Marti</option>
-            <option value="">Miercuri</option>
-            <option value="">Joi</option>
-            <option value="">Vineri</option>
-            <option value="">Simbata</option>
-            <option value="">Duminica</option>
-        </select>
+                <h4>Orarul Cursului</h4>
+            </div>
+            <div class="butoane">
+                <button class="butoane1">Grupe</button>
+                <button class="butoane2">Profesori</button>
+                <button class="butoane3">Aule</button>
+            </div>
 
-        <select name="" id="nedelea__select">
-            <option value="-1">Săptămîna</option>
-            <option value="1">1 (2.9.2024 - 8.9.2024)</option>
-            <option value="2">2 (9.9.2024 - 15.9.2024)</option>
-            <option value="3">3 (16.9.2024 - 22.9.2024)</option>
-            <option value="4">4 (23.9.2024 - 29.9.2024)</option>
-            <option value="5">5 (30.9.2024 - 6.10.2024)</option>
-            <option value="6">6 (7.10.2024 - 13.10.2024)</option>
-            <option value="7">7 (14.10.2024 - 20.10.2024)</option>
-            <option value="8">8 (21.10.2024 - 27.10.2024)</option>
-            <option value="9">9 (28.10.2024 - 3.11.2024)</option>
-            <option  value="10">10 (4.11.2024 - 10.11.2024)</option>
-            <option value="11">11 (11.11.2024 - 17.11.2024)</option>
-            <option value="12">12 (18.11.2024 - 24.11.2024)</option>
-            <option selected="selected" value="13">13 (25.11.2024 - 1.12.2024)</option>
-            <option value="14">14 (2.12.2024 - 8.12.2024)</option>
-            <option value="15">15 (9.12.2024 - 15.12.2024)</option>
-            <option value="16">16 (16.12.2024 - 22.12.2024)</option>
-            <option value="17">17 (23.12.2024 - 29.12.2024)</option>
-            <option value="18">18 (30.12.2024 - 5.1.2025)</option>
-            <option value="19">19 (6.1.2025 - 12.1.2025)</option>
-            <option value="20">20 (13.1.2025 - 19.1.2025)</option>
-            <option value="21">21 (20.1.2025 - 26.1.2025)</option>
-        </select>
-        <div class="schedule-grid">
-            <div class="header"></div>
-            <div class="header">1</div>
-            <div class="header">2</div>
-            <div class="header">3</div>
-            <div class="header">4</div>
-            <div class="header">5</div>
-            <div class="header">6</div>
-            <div class="header">7</div>
-           
-            <div class="row">L - 25</div>
-            <div class="div__not"></div>
-            <div class="div__not"></div>
-            <div class="div__not"></div>
-            <div class="blue">P</div>
-            <div class="green">S</div>
-            <div class="div__not"></div>
-            <div class="div__not"></div>
-        
-            <div class="row">Ma - 26</div>
-            <div class="div__not"></div>
-            <div class="green">L</div>
-            <div class="green">L</div>
-            <div class="black">S</div>
-            <div class="div__not"></div>
-            <div class="div__not"></div>
-            <div class="div__not"></div>
-        
-            <div class="row">Mi - 27</div>
-            <div class="green">S</div>
-            <div class="caf">S</div>
-            <div class="div__not"></div>
-            <div class="yellow">L</div>
-            <div class="div__not"></div>
-            <div class="div__not"></div>
-            <div class="div__not"></div>
-        
-            <div class="row">J - 28</div>
-            <div class="div__not"></div>
-            <div class="orange">P</div>
-            <div class="gray">L</div>
-            <div class="gray">L</div>
-            <div class="green">S</div>
-            <div class="div__not"></div>
-            <div class="div__not"></div>
-        
-            <div class="row">V - 29</div>
-            <div class="div__not"></div>
-            <div class="caf">S</div>
-            <div class="yellow">L</div>
-            <div class="pink">L</div>
-            <div class="div__not"></div>
-            <div class="div__not"></div>
-            <div class="div__not"></div>
-        
-            <div class="row">S - 9</div>
-            <div class="div__not"></div>
-            <div class="div__not"></div>
-            <div class="div__not"></div>
-            <div class="div__not"></div>
-            <div class="div__not"></div>
-            <div class="div__not"></div>
-            <div class="div__not"></div>
-        
-            <div class="row">D - 10</div>
-            <div class="div__not"></div>
-            <div class="div__not"></div>
-            <div class="div__not"></div>
-            <div class="div__not"></div>
-            <div class="div__not"></div>
-            <div class="div__not"></div>
-            <div class="div__not"></div>
-          
-        </div>
-        <div class="instructions">
-            <h5>P - Prelegere</h5>
-            <h5>S - Seminar</h5>
-            <h5>L - Laborator</h5>
-            <h5>PC - Proiect de Curs</h5>
-            <h5>EP - Evaluarea periodica</h5>
-            <h5>C - Consultație</h5>
-            <h5>E - Examinare</h5>
-            <h5>R - Reexaminare</h5>
-            <h5>SP - Seminar prealabil</h5>
-            <h5>ST - Seminar de totalizare</h5>
-            
-    <div class="buttons">
-        <a href="#">Descarcă orar
-            <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="file-pdf"><rect fill="none" stroke="#000" width="13" height="17" x="3.5" y="1.5"></rect><path d="M14.65 11.67c-.48.3-1.37-.19-1.79-.37a4.65 4.65 0 0 1 1.49.06c.35.1.36.28.3.31zm-6.3.06l.43-.79a14.7 14.7 0 0 0 .75-1.64 5.48 5.48 0 0 0 1.25 1.55l.2.15a16.36 16.36 0 0 0-2.63.73zM9.5 5.32c.2 0 .32.5.32.97a1.99 1.99 0 0 1-.23 1.04 5.05 5.05 0 0 1-.17-1.3s0-.71.08-.71zm-3.9 9a4.35 4.35 0 0 1 1.21-1.46l.24-.22a4.35 4.35 0 0 1-1.46 1.68zm9.23-3.3a2.05 2.05 0 0 0-1.32-.3 11.07 11.07 0 0 0-1.58.11 4.09 4.09 0 0 1-.74-.5 5.39 5.39 0 0 1-1.32-2.06 10.37 10.37 0 0 0 .28-2.62 1.83 1.83 0 0 0-.07-.25.57.57 0 0 0-.52-.4H9.4a.59.59 0 0 0-.6.38 6.95 6.95 0 0 0 .37 3.14c-.26.63-1 2.12-1 2.12-.3.58-.57 1.08-.82 1.5l-.8.44A3.11 3.11 0 0 0 5 14.16a.39.39 0 0 0 .15.42l.24.13c1.15.56 2.28-1.74 2.66-2.42a23.1 23.1 0 0 1 3.59-.85 4.56 4.56 0 0 0 2.91.8.5.5 0 0 0 .3-.21 1.1 1.1 0 0 0 .12-.75.84.84 0 0 0-.14-.25z"></path></svg>            </a>
-        <a href="#">Examene
-            <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="print"><polyline fill="none" stroke="#000" points="4.5 13.5 1.5 13.5 1.5 6.5 18.5 6.5 18.5 13.5 15.5 13.5"></polyline><polyline fill="none" stroke="#000" points="15.5 6.5 15.5 2.5 4.5 2.5 4.5 6.5"></polyline><rect fill="none" stroke="#000" width="11" height="6" x="4.5" y="11.5"></rect><rect width="8" height="1" x="6" y="13"></rect><rect width="8" height="1" x="6" y="15"></rect></svg>
-        </a>
-        <a href="#">Planificare
-            <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="database"><ellipse fill="none" stroke="#000" cx="10" cy="4.64" rx="7.5" ry="3.14"></ellipse><path fill="none" stroke="#000" d="M17.5,8.11 C17.5,9.85 14.14,11.25 10,11.25 C5.86,11.25 2.5,9.84 2.5,8.11"></path><path fill="none" stroke="#000" d="M17.5,11.25 C17.5,12.99 14.14,14.39 10,14.39 C5.86,14.39 2.5,12.98 2.5,11.25"></path><path fill="none" stroke="#000" d="M17.49,4.64 L17.5,14.36 C17.5,16.1 14.14,17.5 10,17.5 C5.86,17.5 2.5,16.09 2.5,14.36 L2.5,4.64"></path></svg>
-        </a>
-    </div>
-    <div class="info__last">Serviciul este inactiv între ore 23:00 și 3:00</div>
-    </div>
+            <div class="filter">
+                <h3>Regim pentru student</h3>
+                <label class="switch">
+
+                    <span class="slider">
+                        <div class="patrat"></div>
+                    </span>
+            </div>
+            </label>
+            <div class="group">
+                <div><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                        data-svg="search-icon">
+                        <circle fill="none" stroke="#000" stroke-width="1.1" cx="9" cy="9" r="7"></circle>
+                        <path fill="none" stroke="#000" stroke-width="1.1" d="M14,14 L18,18 L14,14 Z"></path>
+                    </svg></div>
+                <input type="search" autocapitalize="off" class="group__zone">
+
+            </div>
+
+            <ul class="button__group">
+                <button>
+                    <li>IT01Z</li>
+                </button><button>
+                    <li>IT02Z</li>
+                </button><button>
+                    <li>IT03Z</li>
+                </button><button>
+                    <li>IT04Z</li>
+                </button><button>
+                    <li>IT05Z</li>
+                </button><button>
+                    <li>IT06Z</li>
+                </button><button>
+                    <li>IT07Z</li>
+                </button><button>
+                    <li>IT08Z</li>
+                </button><button>
+                    <li>IT09Z</li>
+                </button><button>
+                    <li>IT10Z</li>
+                </button><button>
+                    <li>IT11Z</li>
+                </button><button>
+                    <li>IT12Z</li>
+                </button><button>
+                    <li>IT13Z</li>
+                </button><button>
+                    <li>IT14Z</li>
+                </button><button>
+                    <li>IT15Z</li>
+                </button><button>
+                    <li>IT16Z</li>
+                </button><button>
+                    <li>IT17Z</li>
+                </button><button>
+                    <li>IT18Z</li>
+                </button><button>
+                    <li>IT19Z</li>
+                </button><button>
+                    <li>IT20Z</li>
+                </button><button>
+                    <li>IT21Z</li>
+                </button><button>
+                    <li>IT22Z</li>
+                </button><button>
+                    <li>IT23Z</li>
+                </button><button>
+                    <li>IT24Z</li>
+                </button><button>
+                    <li>IT25Z</li>
+                </button>
+            </ul>
+            <select name="" id="day__select">
+                <option value="">Ziua</option>
+                <option value="">Luni</option>
+                <option value="">Marti</option>
+                <option value="">Miercuri</option>
+                <option value="">Joi</option>
+                <option value="">Vineri</option>
+                <option value="">Simbata</option>
+                <option value="">Duminica</option>
+            </select>
+
+            <select name="" id="nedelea__select">
+                <option value="-1">Săptămîna</option>
+                <option value="1">1 (2.9.2024 - 8.9.2024)</option>
+                <option value="2">2 (9.9.2024 - 15.9.2024)</option>
+                <option value="3">3 (16.9.2024 - 22.9.2024)</option>
+                <option value="4">4 (23.9.2024 - 29.9.2024)</option>
+                <option value="5">5 (30.9.2024 - 6.10.2024)</option>
+                <option value="6">6 (7.10.2024 - 13.10.2024)</option>
+                <option value="7">7 (14.10.2024 - 20.10.2024)</option>
+                <option value="8">8 (21.10.2024 - 27.10.2024)</option>
+                <option value="9">9 (28.10.2024 - 3.11.2024)</option>
+                <option value="10">10 (4.11.2024 - 10.11.2024)</option>
+                <option value="11">11 (11.11.2024 - 17.11.2024)</option>
+                <option value="12">12 (18.11.2024 - 24.11.2024)</option>
+                <option selected="selected" value="13">13 (25.11.2024 - 1.12.2024)</option>
+                <option value="14">14 (2.12.2024 - 8.12.2024)</option>
+                <option value="15">15 (9.12.2024 - 15.12.2024)</option>
+                <option value="16">16 (16.12.2024 - 22.12.2024)</option>
+                <option value="17">17 (23.12.2024 - 29.12.2024)</option>
+                <option value="18">18 (30.12.2024 - 5.1.2025)</option>
+                <option value="19">19 (6.1.2025 - 12.1.2025)</option>
+                <option value="20">20 (13.1.2025 - 19.1.2025)</option>
+                <option value="21">21 (20.1.2025 - 26.1.2025)</option>
+            </select>
+            <div class="schedule-grid">
+                <div class="header"></div>
+                <div class="header">1</div>
+                <div class="header">2</div>
+                <div class="header">3</div>
+                <div class="header">4</div>
+                <div class="header">5</div>
+                <div class="header">6</div>
+                <div class="header">7</div>
+
+                <div class="row">L - 25</div>
+                <div class="div__not"></div>
+                <div class="div__not"></div>
+                <div class="div__not"></div>
+                <div class="blue">P</div>
+                <div class="green">S</div>
+                <div class="div__not"></div>
+                <div class="div__not"></div>
+
+                <div class="row">Ma - 26</div>
+                <div class="div__not"></div>
+                <div class="green">L</div>
+                <div class="green">L</div>
+                <div class="black">S</div>
+                <div class="div__not"></div>
+                <div class="div__not"></div>
+                <div class="div__not"></div>
+
+                <div class="row">Mi - 27</div>
+                <div class="green">S</div>
+                <div class="caf">S</div>
+                <div class="div__not"></div>
+                <div class="yellow">L</div>
+                <div class="div__not"></div>
+                <div class="div__not"></div>
+                <div class="div__not"></div>
+
+                <div class="row">J - 28</div>
+                <div class="div__not"></div>
+                <div class="orange">P</div>
+                <div class="gray">L</div>
+                <div class="gray">L</div>
+                <div class="green">S</div>
+                <div class="div__not"></div>
+                <div class="div__not"></div>
+
+                <div class="row">V - 29</div>
+                <div class="div__not"></div>
+                <div class="caf">S</div>
+                <div class="yellow">L</div>
+                <div class="pink">L</div>
+                <div class="div__not"></div>
+                <div class="div__not"></div>
+                <div class="div__not"></div>
+
+                <div class="row">S - 9</div>
+                <div class="div__not"></div>
+                <div class="div__not"></div>
+                <div class="div__not"></div>
+                <div class="div__not"></div>
+                <div class="div__not"></div>
+                <div class="div__not"></div>
+                <div class="div__not"></div>
+
+                <div class="row">D - 10</div>
+                <div class="div__not"></div>
+                <div class="div__not"></div>
+                <div class="div__not"></div>
+                <div class="div__not"></div>
+                <div class="div__not"></div>
+                <div class="div__not"></div>
+                <div class="div__not"></div>
+
+            </div>
+            <div class="instructions">
+                <h5>P - Prelegere</h5>
+                <h5>S - Seminar</h5>
+                <h5>L - Laborator</h5>
+                <h5>PC - Proiect de Curs</h5>
+                <h5>EP - Evaluarea periodica</h5>
+                <h5>C - Consultație</h5>
+                <h5>E - Examinare</h5>
+                <h5>R - Reexaminare</h5>
+                <h5>SP - Seminar prealabil</h5>
+                <h5>ST - Seminar de totalizare</h5>
+
+                <div class="buttons">
+                    <a href="#">Descarcă orar
+                        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                            data-svg="file-pdf">
+                            <rect fill="none" stroke="#000" width="13" height="17" x="3.5" y="1.5"></rect>
+                            <path
+                                d="M14.65 11.67c-.48.3-1.37-.19-1.79-.37a4.65 4.65 0 0 1 1.49.06c.35.1.36.28.3.31zm-6.3.06l.43-.79a14.7 14.7 0 0 0 .75-1.64 5.48 5.48 0 0 0 1.25 1.55l.2.15a16.36 16.36 0 0 0-2.63.73zM9.5 5.32c.2 0 .32.5.32.97a1.99 1.99 0 0 1-.23 1.04 5.05 5.05 0 0 1-.17-1.3s0-.71.08-.71zm-3.9 9a4.35 4.35 0 0 1 1.21-1.46l.24-.22a4.35 4.35 0 0 1-1.46 1.68zm9.23-3.3a2.05 2.05 0 0 0-1.32-.3 11.07 11.07 0 0 0-1.58.11 4.09 4.09 0 0 1-.74-.5 5.39 5.39 0 0 1-1.32-2.06 10.37 10.37 0 0 0 .28-2.62 1.83 1.83 0 0 0-.07-.25.57.57 0 0 0-.52-.4H9.4a.59.59 0 0 0-.6.38 6.95 6.95 0 0 0 .37 3.14c-.26.63-1 2.12-1 2.12-.3.58-.57 1.08-.82 1.5l-.8.44A3.11 3.11 0 0 0 5 14.16a.39.39 0 0 0 .15.42l.24.13c1.15.56 2.28-1.74 2.66-2.42a23.1 23.1 0 0 1 3.59-.85 4.56 4.56 0 0 0 2.91.8.5.5 0 0 0 .3-.21 1.1 1.1 0 0 0 .12-.75.84.84 0 0 0-.14-.25z">
+                            </path>
+                        </svg> </a>
+                    <a href="#">Examene
+                        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                            data-svg="print">
+                            <polyline fill="none" stroke="#000"
+                                points="4.5 13.5 1.5 13.5 1.5 6.5 18.5 6.5 18.5 13.5 15.5 13.5"></polyline>
+                            <polyline fill="none" stroke="#000" points="15.5 6.5 15.5 2.5 4.5 2.5 4.5 6.5"></polyline>
+                            <rect fill="none" stroke="#000" width="11" height="6" x="4.5" y="11.5"></rect>
+                            <rect width="8" height="1" x="6" y="13"></rect>
+                            <rect width="8" height="1" x="6" y="15"></rect>
+                        </svg>
+                    </a>
+                    <a href="#">Planificare
+                        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                            data-svg="database">
+                            <ellipse fill="none" stroke="#000" cx="10" cy="4.64" rx="7.5" ry="3.14"></ellipse>
+                            <path fill="none" stroke="#000"
+                                d="M17.5,8.11 C17.5,9.85 14.14,11.25 10,11.25 C5.86,11.25 2.5,9.84 2.5,8.11"></path>
+                            <path fill="none" stroke="#000"
+                                d="M17.5,11.25 C17.5,12.99 14.14,14.39 10,14.39 C5.86,14.39 2.5,12.98 2.5,11.25"></path>
+                            <path fill="none" stroke="#000"
+                                d="M17.49,4.64 L17.5,14.36 C17.5,16.1 14.14,17.5 10,17.5 C5.86,17.5 2.5,16.09 2.5,14.36 L2.5,4.64">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="info__last">Serviciul este inactiv între ore 23:00 și 3:00</div>
+            </div>
 
         </div>
-   
-        <div class="right"><div style="margin-left: 20px;">
-            <div id="logo">
-                <img src="image/logo_usarb.png" alt="">
+
+        <div class="right">
+            <div style="margin-left: 20px;">
+                <div id="logo">
+                    <img src="image/logo_usarb.png" alt="">
+                </div>
+                <h2>UNIVERSITATEA DE STAT „ALECU RUSSO” DIN BĂLȚI</h2>
             </div>
-            <h2>UNIVERSITATEA DE STAT „ALECU RUSSO” DIN BĂLȚI</h2>
+            <div class="schedule-container">
+                <div class="time-slot ">
+                    <div>8:00</div>
+                    <div>9:30</div>
+                </div>
+                <div class="class-details ">
+                    <div style="font-weight: bold; color: black;">Matematica I</div>
+                    <div>Seminar</div>
+                    <div>asist. univ.Rotari T. V.</div>
+                    <div style="font-weight: bold; color: black;">aud. 224</div>
+                </div>
+
+                <div class="time-slot">
+                    <div>9:45</div>
+                    <div>11:15</div>
+                </div>
+                <div class="class-details">
+                    <div style="font-weight: bold; color: black;">Limba engleză I</div>
+                    <div>Seminar</div>
+                    <div>asist. univ.L. Coșulean</div>
+                    <div style="font-weight: bold; color: black;">aud. 406</div>
+                </div>
+
+                <div class="time-slot">
+                    <div>11:30</div>
+                    <div>13:00</div>
+                </div>
+                <div class="class-details">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <div class="time-slot">
+                    <div>13:15</div>
+                    <div>14:45</div>
+                </div>
+                <div class="class-details">
+                    <div style="font-weight: bold; color: black;">Proiectarea paginilor WEB</div>
+                    <div>Laborator</div>
+                    <div>asist. univ.Chilat S.</div>
+                    <div style="font-weight: bold; color: black;">aud. 141a</div>
+                </div>
+
+                <div class="time-slot">
+                    <div>15:00</div>
+                    <div>16:30</div>
+                </div>
+                <div class="class-details"></div>
+
+                <div class="time-slot">
+                    <div>16:45</div>
+                    <div>18:15</div>
+                </div>
+                <div class="class-details"></div>
+
+                <div class="time-slot">
+                    <div>18:30</div>
+                    <div>20:00</div>
+                </div>
+                <div class="class-details "></div>
+            </div>
+
         </div>
-        <div class="schedule-container">
-            <div class="time-slot">
-                <div>8:00</div>
-                <div>9:30</div>
-            </div>
-            <div class="class-details">
-                <div  style="font-weight: bold; color: black;">Matematica I</div>
-                <div>Seminar</div>
-                <div>asist. univ.Rotari T. V.</div>
-                <div  style="font-weight: bold; color: black;">aud. 224</div>
-            </div>
-        
-            <div class="time-slot">
-                <div>9:45</div>
-                <div>11:15</div>
-            </div>
-            <div class="class-details">
-                <div  style="font-weight: bold; color: black;">Limba engleză I</div>
-                <div>Seminar</div>
-                <div>asist. univ.L. Coșulean</div>
-                <div  style="font-weight: bold; color: black;">aud. 406</div>
-            </div>
-        
-            <div class="time-slot">
-                <div>11:30</div>
-                <div>13:00</div>
-            </div>
-            <div class="class-details">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        
-            <div class="time-slot">
-                <div>13:15</div>
-                <div>14:45</div>
-            </div>
-            <div class="class-details">
-                <div style="font-weight: bold; color: black;">Proiectarea paginilor WEB</div>
-                <div>Laborator</div>
-                <div>asist. univ.Chilat S.</div>
-                <div  style="font-weight: bold; color: black;">aud. 141a</div>
-            </div>
-        
-            <div class="time-slot">
-                <div>15:00</div>
-                <div>16:30</div>
-            </div>
-            <div class="class-details"></div>
-        
-            <div class="time-slot">
-                <div>16:45</div>
-                <div>18:15</div>
-            </div>
-            <div class="class-details"></div>
-        
-            <div class="time-slot">
-                <div>18:30</div>
-                <div>20:00</div>
-            </div>
-            <div class="class-details "></div>
-        </div>
-        
-    </div>
     </main>
+    <script src="index.js"></script>
 </body>
+
 </html>
